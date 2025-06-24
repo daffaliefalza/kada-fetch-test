@@ -1,0 +1,106 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005fa3;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Navbar */
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #ddd;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+/* Main Content */
+main {
+  padding: 2rem 1rem;
+}
+
+/* Posts List */
+.posts-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.postDetail a {
+  display: flex;
+  justify-content: center;
+}
+
+.posts-container a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.posts-container a:hover {
+  transform: scale(1.02);
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
